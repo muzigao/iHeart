@@ -1,0 +1,61 @@
+
+
+
+
+function showPictures(){
+	alert(localStorage["mysetting"]);
+
+	
+}
+
+function selectPicture(){
+	
+
+	$('#pictures_container li').each(function(){
+		$(this).click(function(){
+			$(this).addClass('selected');
+			$(this).siblings().removeClass('selected');
+
+			heartItem.picSrc = $(this).children('img').attr("src");
+
+			localStorage["mysetting"] = "myvalue";
+			$('#current_url').text(localStorage["mysetting"]);
+		});
+	});
+	
+	saveItem(heartItem);
+}
+
+function saveItem(heartitem){
+	$('#save').click(function(){
+		if($('#price').val() == "" ){
+			alert("Please enter something as prompt! (e.g price)");
+		}
+		else{
+			heartitem.prompt = $('#price').val();
+
+			//var heartItemList = localStorage["heartItems"];
+			//heartItemList.push(heartitem);
+
+			/*
+
+			var heartItemList;
+
+			if(localStorage.getItem('heartItems') == null){
+				heartItemList = {"items": []};
+			}
+			else{
+				heartItemList = JSON.parse(localStorage.getItem('heartItems'));
+			}
+
+			heartItemList.items.push(heartitem);
+			localStorage.setItem('heartItems', JSON.stringify(heartItemList));
+
+
+			//alert(localStorage.getItem('heartItems'));
+			*/
+
+		}
+	});
+
+}

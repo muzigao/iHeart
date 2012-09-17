@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+	<script src="jquery-1.8.1.min.js"></script>
+	<script src="popup.js"></script>
+	<link href="popup.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<ul id="navigation">
+		<li id="to_display">
+			<p>Heart Items</p>
+		</li>
+		<li id="to_select">
+			<p>+<br/>Add</p>
+		</li>
+		<li id="to_clear">
+			<p>x<br/>Clear</p>
+		</li>
+		<div class="clear"></div>
+	</ul>
+
+	<div id="display_heartitems">
+		<ul id="heartitems_container" class="picture_grid"></ul>
+		<div class="clear"></div>
+	</div>
+
+	<div id="select_pictures">
+		<p class="step">Step 1 -- Select your picture</p>
+		<ul id="pictures_container" class="picture_grid"></ul>
+		<div class="clear"></div>
+
+		<p class="step">Step 2 -- Type anything you want as a prompt</p>
+		<input type="text" id="prompt" placeholder="Type anything you want as a prompt..."/>
+		<div id="save"></div>
+	</div>
+
+	<div class="clear"></div>
+</body>
+</html>
