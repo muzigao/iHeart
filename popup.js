@@ -1,5 +1,5 @@
-var allPictures = [];
-var tabUrl;
+var allPictures = []; //store pictures extracted from getPictures.js
+var tabUrl;						//get url from current tab
 
 $(document).ready(function(){
   chrome.windows.getCurrent(function (currentWindow) {
@@ -21,6 +21,8 @@ $(document).ready(function(){
 		$('#select_pictures').hide();
 	});
 
+	//To clear all items stored in iHeart package
+	//and refresh user interface
 	$('#to_clear').click(function(){
 		var is_clear = confirm("Do you want to clear all items?");
 		if (is_clear){
@@ -47,6 +49,8 @@ chrome.extension.onMessage.addListener(
 		selectPicture();
 });
 
+
+//To display all items in iHeart package
 function showHeartItems(){
 	if(localStorage.getItem('heartItems') == null ||
 		JSON.parse(localStorage.getItem('heartItems')).items.length == 0){
@@ -100,6 +104,7 @@ function showHeartItems(){
 	}	
 }
 
+//To delete one item from iHeart package
 function deleteItem(value){
 	var heartItemList = JSON.parse(localStorage.getItem('heartItems'));
 	var _index;
@@ -115,9 +120,9 @@ function deleteItem(value){
 	showHeartItems();
 }
 
+//To extract images from current web page
+//Only display first 8 (sorted by size)
 function showPictures(){
-	$('#current_url').html(localStorage["picUrl"]);
-
 	var picNum = allPictures.length >= 8? 8:allPictures.length;
 	for(var i=0; i<picNum; i++){
 		$('#pictures_container').append('<li></li>');
@@ -129,6 +134,7 @@ function showPictures(){
 	}
 }
 
+//To select one and save to localStorage
 function selectPicture(){
 	var heartItem = {
 		id: -1,
@@ -149,6 +155,7 @@ function selectPicture(){
 	saveItem(heartItem);
 }
 
+//To store one item(id, image src, item link, and optional prompt) in localStorage['heartItems']
 function saveItem(heartitem){
 	$('#save').click(function(){
 
@@ -175,8 +182,6 @@ function saveItem(heartitem){
 
 			heartItemList.items.push(heartitem);
 			localStorage.setItem('heartItems', JSON.stringify(heartItemList));
-			//alert(localStorage.getItem('heartItems'));
-			//alert(heartitem.prompt);
 
 			showHeartItems();
 			$('#prompt').val("");
@@ -184,6 +189,7 @@ function saveItem(heartitem){
 	});
 }
 
+//To generate id for each item
 function generateIndex(){
 	if(localStorage.getItem('heartItems') == null ||
 		 JSON.parse(localStorage.getItem('heartItems')).items.length == 0){

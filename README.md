@@ -19,12 +19,12 @@
 </h2>
 <p>Now, you can download source code from github and try it on your Google Chrome.</p>
 <br/>
-<p><b>STEP 1 Load the extension</b> (Refer to <a href="http://developer.chrome.com/extensions/getstarted.html">Google Chrome Extensions Tutorial: Getting Started</a>)</p>
+<p><b>STEP 1 -- Load the extension</b> (Refer to <a href="http://developer.chrome.com/extensions/getstarted.html">Google Chrome Extensions Tutorial: Getting Started</a>)</p>
 <p>1. Download source code from github, and extract it on your computer. </p>
 <p>2. Bring up the extensions management page by clicking the wrench icon <img src="http://developer.chrome.com/stable/static/images/toolsmenu.gif" style="width:20px;"/> and choosing <b>Tools > Extensions</b>.</p>
 <p>3. If <b>Developer mode</b> has a + by it, click the + to add developer information to the page. The + changes to a -, and more buttons and information appear.</p>
 <p>4. Click the <b>Load unpacked extension button</b>. A file dialog appears.</p>
 <p>5. In the file dialog, navigate to your extension's folder and click <b>OK</b>.</p>
 <br/>
-<p><b>STEP 2 Getting started with iHeart</b></p>
+<p><b>STEP 2 -- Getting started with iHeart</b></p>
 
