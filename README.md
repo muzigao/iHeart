@@ -27,4 +27,13 @@
 <p>5. In the file dialog, navigate to your extension's folder and click <b>OK</b>.</p>
 <br/>
 <p><b>STEP 2 -- Getting started with iHeart</b></p>
+<p>iHeart is quite easy:</p>
+<ul>
+	<li>Toggle "View Items" to hide/show your items.</li>
+	<li>Hover on each item to view your prompt.</li>
+	<li>Click "x" on each item to remove it from storage.</li>
+	<li>Click each item to open the link on new tab.</li>
+	<li>Toggle "+ Add" and follow the instruction to select from extracted images and add a new one.</li>
+	<li>Click "x Clear" to clear all stored items.</li>
+</ul>
 
