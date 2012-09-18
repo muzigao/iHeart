@@ -18,7 +18,7 @@
 	How to use iHeart?
 </h2>
 <p>At this stage, you can download source code from github and try it on your Google Chrome. </p>
-<p><b>STEP 1</b> Load the extension (Refer to <a href="http://developer.chrome.com/extensions/getstarted.html">Google Chrome Extensions Tutorial: Getting Started</a>)</p>
+<p><b>STEP 1 Load the extension</b> (Refer to <a href="http://developer.chrome.com/extensions/getstarted.html">Google Chrome Extensions Tutorial: Getting Started</a>)</p>
 <p>1. Download source code from github, and extract it on your computer. </p>
 <p>2. Bring up the extensions management page by clicking the wrench icon <img src="http://developer.chrome.com/stable/static/images/toolsmenu.gif" style="width:20px;"/> and choosing <b>Tools > Extensions</b>.</p>
 <p>3. If <b>Developer mode</b> has a + by it, click the + to add developer information to the page. The + changes to a -, and more buttons and information appear.</p>
