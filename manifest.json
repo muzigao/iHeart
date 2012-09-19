@@ -1,6 +1,6 @@
 {
 	"name": "iHeart",
-	"version": "1.0",
+	"version": "0.0.0.1",
 	"description": "Save items and make decisions later",
 	"permissions": [
     "experimental", "storage", "tabs", "http://*/*", "https://*/*"

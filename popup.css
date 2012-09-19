@@ -20,24 +20,24 @@ ul, ol{
 #navigation li{
 	float:left;
 	width:80px;
-	height:80px;
+	height:24px;
 	background:white;
-	border-radius:80px;
-	-webkit-border-radius:80px;
-	margin:auto 20px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	margin:auto 10px;
 	text-align:center;
 	cursor:pointer;
+	line-height:24px;
 }
 
 #navigation li:first-child{
 	margin-left:0px;
+	width:120px;
 }
 #navigation li:last-child{
 	margin-right:0px;
 }
-#navigation li p{
-	line-height:1.5;
-}
+
 #navigation li#to_display{
 	background-color:#5CA7BE;
 	color:#efefef;
